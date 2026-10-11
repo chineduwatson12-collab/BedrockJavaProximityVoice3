@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: bedrock-java-proximity-voice
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: BRIDGE_TOKEN
+        generateValue: true
